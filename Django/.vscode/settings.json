@@ -1,0 +1,9 @@
+{
+  "python.pythonPath": "C:Usershpanaconda3python.exe",
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.provider": "none"
+}

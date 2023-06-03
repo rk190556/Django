@@ -1,0 +1,38 @@
+ for activating virtual enviroment we used 'active MyDjangoEnv'
+ for creating a project write this on terminal 'django-admin startproject ProjectName'
+ after that we create application by writing this on terminal 'python manage.py startapp appname'
+ then we add appname in installed appp present in setting.py
+
+#create super user with command python manage.py createsuperuser
+ #admin username=rahul190556
+ #admin password=Lohchi70072
+ #admin emailid=rahulshamr620607@gmail.com
+
+
+http://127.0.0.1:8000--------------> original url
+http://127.0.0.1:8000/first_app/---> reference url created in first_app
+
+
+
+### creating models 
+c:\Users\hp\OneDrive\Desktop\PP\Django\first_project>python manage.py shell
+Python 3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 8.13.2 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: print("hello")
+hello
+
+In [2]: from first_app.models import Topic
+
+In [3]: print(Topic.objects.all())
+<QuerySet []>
+
+In [4]: t=Topic(top_name="Social Network")
+
+In [5]: t.save()
+
+In [6]: print(Topic.objects.all())
+<QuerySet [<Topic: Social Network>]>
+
+In [7]: quit()
